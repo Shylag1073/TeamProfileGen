@@ -54,12 +54,25 @@ function addingTeammates(teamData) {
                 message: "What is your engineer's Github?"
             }
         ]).then(engData => {
-            console.log(engData.Engineer1)
+            console.log(engData.Engineer1);
+            return [
+                inquirer.prompt([
+                    {
+                        type: 'list',
+                        message: 'Who would you like to add to your team?',
+                        name: 'addTeam',
+                        choices: ['add an enginer', 'add intern', ' none']
+                    }
+                ])
+            ]
+
         })
 
     }
+
     // Adding Intern propmt//////
-    else if (teamData.addTeam === 'add intern') {
+
+    if (teamData.addTeam === 'add intern') {
 
         console.log("you're adding an Intern")
 
@@ -87,6 +100,16 @@ function addingTeammates(teamData) {
             }
         ]).then(IntData => {
             console.log(IntData.Intern1)
+            return [
+                inquirer.prompt([
+                    {
+                        type: 'list',
+                        message: 'Who would you like to add to your team?',
+                        name: 'addTeam',
+                        choices: ['add an enginer', 'add intern', ' none']
+                    }
+                ])
+            ]
         })
 
     }
@@ -94,7 +117,15 @@ function addingTeammates(teamData) {
 
 };
 
-
-
+//return [
+    //inquirer.prompt([
+    //    {
+    //        type: 'list',
+     //       message: 'Who would you like to add to your team?',
+     //       name: 'addTeam',
+      //      choices: ['add an enginer', 'add intern', ' none']
+      //  }
+  //  ])
+//];
 
 
