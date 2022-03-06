@@ -122,13 +122,13 @@ const inquirer = require("inquirer");
               <title>Team Page</title>
              <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-             <link rel="stylesheet" href="./Assets/style.css">
+             <link rel="stylesheet" href="./output/Assets/style.css">
         </head>
 
         <body>
         <section class="hero is-primary">
         <div class="hero-body">
-            <p class="ctitle">
+            <p class="title">
                 MY TEAM
              </p>
             </div>
