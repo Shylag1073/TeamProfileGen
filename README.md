@@ -1,16 +1,14 @@
 # TeamProfileGen
-# ReadMeMaker 
 
 ## Table of Context 
 
 * [Description](#description)
-* [Contributing](#contributing)
 * [Installation](#installation)
 * [Website](#website)
 * [Questions](#questions)
 
 
-# Desription 
+# Description 
 This application will allow you to generate a team page. You'll be able to input manager, three engineers, and one intern information by answering the prompts. Then a formatted HTML file will generate displaying all the information to help present your team nicely
 
 # Installation 
